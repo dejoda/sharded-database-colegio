@@ -1,0 +1,31 @@
+CADA COMANDO CON SU PORPIO CMD
+
+Iniciar el Config Server Replica Set 
+
+mongosh --port 26050
+--->rs.initiate({ _id: 'configReplSet', configsvr: true, members: [{ _id: 0, host: 'localhost:26050' }] }
+
+shard 1
+
+mongosh --port 27017
+--->rs.initiate({ _id: 'shard1ReplSet', members: [{ _id: 0, host: 'localhost:27017' }] })
+
+shard 2
+
+mongosh --port 27018
+--->rs.initiate({ _id: 'shard2ReplSet', members: [{ _id: 0, host: 'localhost:27018' }] }
+
+shard 3
+
+mongosh --port 27019
+--->rs.initiate({ _id: 'shard3ReplSet', members: [{ _id: 0, host: 'localhost:27019' }] })
+
+MONGO ROUTER
+
+mongosh --port 26060
+ sh.addShard('shard1ReplSet/localhost:27017')
+ sh.addShard('shard2ReplSet/localhost:27018')
+ sh.addShard('shard3ReplSet/localhost:27019')
+
+
+SE USA SOLO UNA VEZ(al comienzo) (seguir los pasos del README PRINCIPAL)
