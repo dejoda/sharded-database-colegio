@@ -127,4 +127,4 @@ DESPUES DE LA PRIMERA EJECUCION E INSTALACION
 
 ES NECESARIO ABRIR TODOS LOS INIT .BAT Y SOLO EJECUTAR EL MONGOSH DEL PUERTO 26060
 
-🔒 Seguridad: Todos los procesos de MongoDB están ligados a `localhost`, por lo que ninguna IP pública ni de red local es visible ni accesible desde el exterior. Esta configuración es segura para entornos de desarrollo en tu máquina personal.
+#🔒 Seguridad: Todos los procesos de MongoDB están ligados a `localhost`, por lo que ninguna IP pública ni de red local es visible ni accesible desde el exterior. #Esta configuración es segura para entornos de desarrollo en tu máquina personal.
