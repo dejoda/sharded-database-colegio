@@ -1,4 +1,4 @@
-# Mongo Sharding Colegio Cluster
+# Mongo Sharding Colegio Cluster(🔒 Seguridad: Todos los procesos de MongoDB están ligados a `localhost`, por lo que ninguna IP pública ni de red local es visible ni accesible desde el exterior. Esta configuración es segura para entornos de desarrollo en tu máquina personal.)
 
 Este proyecto implementa un clúster sharded de MongoDB en una sola máquina. Está compuesto por:
 
