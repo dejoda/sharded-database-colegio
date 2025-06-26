@@ -99,6 +99,14 @@ sh.shardCollection("colegio.estudiantes", { cede: 1 })
 
 // 5. Asignar las zonas (opcional pero recomendable si defines zonas en los shards)
 
+sh.addShardToZone("shard1ReplSet", "sur") 
+
+sh.addShardToZone("shard2ReplSet", "norte")  
+
+sh.addShardToZone("shard3ReplSet", "centro") 
+
+ 
+
 sh.updateZoneKeyRange(
   "colegio.example",
   { cede: "centro" },
